@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1075131629171",
+    "project_id": "it-connect-a6f57",
+    "storage_bucket": "it-connect-a6f57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075131629171:android:b680fd2710e77afd5a7406",
+        "android_client_info": {
+          "package_name": "com.ameypandit.itconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075131629171-tccnbrqarguautfc8n1nhgmahkrg0imt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS3mse1xqhfrYrP1vSUqOD_s6XZ8yZsxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075131629171-tccnbrqarguautfc8n1nhgmahkrg0imt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

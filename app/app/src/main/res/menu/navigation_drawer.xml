@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navigation_video"
+        android:title="Video Lectures"
+        android:icon="@drawable/ic_videolectures"/>
+    <item android:id="@+id/navigation_ebook"
+        android:title="E-Books/PDFs"
+        android:icon="@drawable/ic_pdf"/>
+    <item android:id="@+id/navigation_faculty"
+        android:title="Faculty"
+        android:icon="@drawable/ic_faculty"/>
+    <item android:id="@+id/navigation_share"
+        android:title="Share"
+        android:icon="@drawable/ic_home"
+        android:visible="false"/>
+    <item android:id="@+id/navigation_notice"
+        android:title="Notices"
+        android:icon="@drawable/ic_baseline_circle_notifications_24"/>
+    <item android:id="@+id/navigation_developer"
+        android:title="About Developer"
+        android:icon="@drawable/ic_baseline_account_box_24"/>
+    <item android:id="@+id/navigation_admin"
+        android:title="Admin"
+        android:visible="true"
+        android:icon="@drawable/ic_baseline_account_box_24"/>
+
+</menu>

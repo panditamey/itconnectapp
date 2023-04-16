@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homeback"
+
+    android:scrollbars="none"
+    tools:context=".HomeActivity">
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+
+
+        <LinearLayout
+            android:id="@+id/pdf"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+
+            android:background="@drawable/videolec"
+            android:orientation="vertical"
+            android:elevation="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+            <ImageView
+                android:id="@+id/pdfimg"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:paddingTop="20dp"
+                app:srcCompat="@drawable/ic_pdf"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/pdfimgtxt"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+                android:text="PDF's / EBooks"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/videolec"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/videolec"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            android:elevation="6dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+            <ImageView
+                android:id="@+id/videolecimg"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:paddingTop="20dp"
+                app:srcCompat="@drawable/ic_videolectures"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/videolectxt"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+                android:text="Video Lectures"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/faculty"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/videolec"
+            android:elevation="6dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@+id/videolec"
+            app:layout_constraintTop_toBottomOf="@+id/videolec">
+
+            <ImageView
+                android:id="@+id/facultyimg"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:paddingTop="20dp"
+                app:srcCompat="@drawable/ic_faculty"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/facultytxt"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+                android:text="Faculty"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notices"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/videolec"
+            android:elevation="6dp"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/pdf"
+            app:layout_constraintTop_toBottomOf="@+id/pdf">
+
+            <ImageView
+                android:id="@+id/noticesimg"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:paddingTop="20dp"
+                app:srcCompat="@drawable/ic_notice"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/noticestxt"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+                android:text="Notices"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timetable"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/videolec"
+            android:elevation="6dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/faculty"
+            app:layout_constraintTop_toBottomOf="@+id/faculty">
+
+            <ImageView
+                android:id="@+id/timetableimg"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:paddingTop="20dp"
+                app:srcCompat="@drawable/ic_timetable"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/timetabletxt"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+                android:text="Time Table"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/developer"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/videolec"
+            android:elevation="6dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notices">
+
+            <ImageView
+                android:id="@+id/developerimg"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+
+                android:layout_gravity="center"
+                android:paddingTop="20dp"
+                app:srcCompat="@drawable/ic_developer"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/developertxt"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+                android:text="Developer"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/admin"
+            android:visibility="invisible"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/videolec"
+            android:elevation="6dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/developer"
+            app:layout_constraintStart_toEndOf="@+id/timetable"
+            app:layout_constraintTop_toBottomOf="@+id/timetable">
+
+            <ImageView
+                android:id="@+id/adminimg"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:paddingTop="20dp"
+                app:srcCompat="@drawable/ic_developer"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/admintxt"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+                android:text="Admin"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

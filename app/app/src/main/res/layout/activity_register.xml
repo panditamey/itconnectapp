@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homeback"
+    android:padding="35dp"
+
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:fontFamily="@font/acme"
+        android:text="REGISTER"
+        android:textColor="#34BE82"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:background="@drawable/field"
+        android:hint="Enter Your Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_register"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/tv_register"
+        app:layout_constraintTop_toBottomOf="@+id/tv_register" />
+
+    <EditText
+        android:id="@+id/atharvaemailverify_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="Enter Atharva Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/name_reg"
+        android:background="@drawable/field"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name_reg"
+        app:layout_constraintTop_toBottomOf="@+id/name_reg" />
+
+    <EditText
+        android:id="@+id/et_password_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:hint="Set Your Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/field"
+
+        app:layout_constraintEnd_toEndOf="@+id/atharvaemailverify_reg"
+        app:layout_constraintStart_toStartOf="@+id/atharvaemailverify_reg"
+        app:layout_constraintTop_toBottomOf="@+id/atharvaemailverify_reg" />
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/acme"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="@+id/et_password_reg"
+        app:layout_constraintStart_toStartOf="@+id/et_password_reg"
+        app:layout_constraintTop_toBottomOf="@+id/et_password_reg" />
+
+    <TextView
+        android:id="@+id/goToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Already Registered ? Kindly Login Here"
+        android:textColor="#34BE82"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_reg"
+        app:layout_constraintStart_toStartOf="@+id/btn_reg"
+        app:layout_constraintTop_toBottomOf="@+id/btn_reg" />
+</androidx.constraintlayout.widget.ConstraintLayout>
